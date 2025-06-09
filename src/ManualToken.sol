@@ -26,6 +26,6 @@ contract ManualToken {
         s_balances[msg.sender] -= _amount;
         s_balances[_to] += _amount;
         require(balanceOf(msg.sender) + balanceOf(_to) == previousBalance);
-    }
+    }// transfer tokens
 
 }
